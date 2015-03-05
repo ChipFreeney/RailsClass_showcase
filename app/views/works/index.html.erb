@@ -1,5 +1,7 @@
 <h1>Portfolio</h1>
+<% if false %>
 <%= link_to '+ New Work', new_work_path, :class => "button" %>
+<% end %>
 <div class="row">
 <% @works.each do |work| %>
   <div class="large-4 medium-6 columns end">
