@@ -4,8 +4,9 @@
 <% @works.each do |work| %>
   <div class="large-4 medium-6 columns end">
     <div class="panel">
-      <h2><%= link_to work.title, work %></h2>
+      <h2><%= link_to work.title, work.url %></h2>
       <p><%= work.description %></p>
+      <p><%= link_to "Details", work %></p>
       <!-- <p><%= work.image %></p>  -->
     </div>
   </div>
